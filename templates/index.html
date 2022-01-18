@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body >
+<div class="main">
+    <center>
+<h1  class="lol">Contact</h1>
+</center>
+
+{% for contact in contact%}
+<center>
+<div class="card"> <h2 class="Name">Name:{{contact.name}}</h1>
+    <h2 class="Name">Last name:{{contact.lastName}}</h1> 
+        <h2 class="Name">Contact:{{contact.contact}}</h1></div>
+</center>
+{% endfor %}
+</div>
+</body>
+</html>
